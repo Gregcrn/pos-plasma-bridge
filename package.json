@@ -1,0 +1,50 @@
+{
+  "name": "pos-and-plasma-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^1.0.6",
+    "@maticnetwork/maticjs": "^2.0.12",
+    "@maticnetwork/walletconnect-provider": "0.0.1-beta.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@truffle/hdwallet-provider": "^1.0.43",
+    "bootstrap": "^4.5.2",
+    "postcss": "^8.4.21",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^4.6.0",
+    "react-scripts": "3.4.3",
+    "web3": "^1.2.11"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
