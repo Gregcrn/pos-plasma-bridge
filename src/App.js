@@ -200,10 +200,19 @@ const App = () => {
     const x1 = x.toString();
     await maticPoSClient.approveERC20ForDeposit(config.posRootERC20, x1, {
       from: account,
-    });
+    }).then((res) => {
+      alert("approve o/p");
+      console.log("res", res);
+    })
+      ;
     await maticPoSClient.depositERC20ForUser(config.posRootERC20, account, x1, {
       from: account,
-    });
+    })
+      .then((res) => {
+        alert("deposit o/p");
+        // console.log("Deposit", res);
+      })
+      ;
   };
 
   const burnERC20 = async () => {
@@ -215,6 +224,7 @@ const App = () => {
         from: account,
       })
       .then((res) => {
+        alert("burn o/p", res.transactionHash);
         setBurnHash(res.transactionHash);
       });
   };
@@ -226,6 +236,7 @@ const App = () => {
         from: account,
       })
       .then((res) => {
+        alert("exit o/p", res);
         console.log("exit o/p", res);
       });
   };
@@ -392,7 +403,7 @@ const App = () => {
               onChange={onchange}
               required
             />
-            <p id="burnHash">{burnHash}</p>
+            <p className="text-white " id="burnHash">{burnHash}</p>
           </div>
           <div
             id="ERC20"
